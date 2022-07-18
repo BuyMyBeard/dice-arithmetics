@@ -83,7 +83,7 @@ function gameLoop() {
           break;
 
         case 4:
-          if (playerDice.getSide('T') + n.getSide('T') % 10 == 2) {
+          if ((playerDice.getSide('T') + n.getSide('T')) % 10 == 2) {
             n.disable();
           } else {
             lose();
